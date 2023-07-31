@@ -13,7 +13,7 @@ def main():
     submit = driver.find_element_by_xpath('//*[@id="submit-id-submit"]')
     submit.click()
     driver.get('https://www.udemy.com')
-    time.sleep(1000)
+    time.sleep(800)
 	
 if __name__ == '__main__':
     main()
