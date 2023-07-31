@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.service import Service
 # from webdriver_manager.chrome import ChromeDriverManager
 import time
 
+# main function
 def main():
     service = Service(executable_path="./chromedriver")
     options = webdriver.ChromeOptions()
@@ -16,5 +17,6 @@ def main():
     submit = driver.find_element("xpath", '//*[@name="commit"]')
     submit.click()
     time.sleep(1000)
+    
 if __name__ == '__main__':
     main()
