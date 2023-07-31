@@ -11,7 +11,7 @@ def main():
     driver = webdriver.Chrome(service=service, options=options)
     driver.get('https://github.com/login')
     email = driver.find_element("xpath", '//*[@id="login_field"]')
-    email.send_keys('Your Email Address')
+    email.send_keys('Enter Your Email Address')
     password = driver.find_element("xpath", '//*[@id="password"]')
     password.send_keys('Enter Your Password')
     submit = driver.find_element("xpath", '//*[@name="commit"]')
